@@ -382,6 +382,8 @@ img {
     padding: 1rem;
     border-radius: 1rem;
     font-weight: var(--font-medium);
+    outline: none;
+    cursor: pointer
 }
 
 .button:hover {
