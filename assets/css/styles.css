@@ -165,6 +165,11 @@ img {
     text-align: center;
 }
 
+.btn__font {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
 
 /*==================== LAYOUT ====================*/
 
@@ -466,6 +471,37 @@ img {
 .about__buttons {
     display: flex;
     justify-content: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 1rem;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    border-radius: 1rem;
 }
 
 
@@ -1133,6 +1169,12 @@ img {
     }
 }
 
+@media screen and (max-width: 567px) {
+    .about__data {
+        text-align: center;
+    }
+}
+
 
 /* For medium devices */
 
@@ -1159,6 +1201,9 @@ img {
         display: grid;
         grid-template-columns: .6fr;
         justify-content: center;
+    }
+    .about__data {
+        text-align: left;
     }
 }
 
