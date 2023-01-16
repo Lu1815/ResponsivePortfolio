@@ -115,7 +115,7 @@ html {
 }
 
 body {
-    margin: 0 0 var(--header-height) 0;
+    /* margin: 0 0 var(--header-height) 0; */
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
@@ -191,6 +191,10 @@ img {
     left: 0;
     z-index: var(--z-fixed);
     background-color: var(--body-color);
+}
+
+#experience-container {
+    padding-top: var(--mb-3);
 }
 
 
